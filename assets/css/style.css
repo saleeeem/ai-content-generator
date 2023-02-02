@@ -1,0 +1,499 @@
+/**
+ * devnetix admin css for devnetix options..
+ *
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+.dev-ntx-top-header {
+  height: 68px;
+  background: #FFFFFF;
+  padding: 20px 24px;
+}
+.dev-ntx-top-header h4 {
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+color: #101828;
+margin: 0;
+}
+.dev-ntx-header {
+  width: 354px;
+  height: calc(100vh - 68px);
+  background: #FFFFFF;
+  padding: 32px 24px;
+}
+.dev-ntx-main {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+}
+.dev-ntx-content {
+  width: calc(100% - 354px);
+  background: #F6F8FA;
+  min-height: 500px;
+  height: calc(100vh - 68px);
+  padding: 63px 23px;
+  overflow: auto;
+}
+/* .dev-ntx-content {
+  width: 100%;
+  background: #F6F8FA;
+  padding: 63px 23px;
+  overflow: auto;
+} */
+.dev-ntx-menu {
+  list-style: none;
+  margin: 70px 0 0 0;
+}
+.dev-ntx-menu li {
+  display: block;
+}
+.dev-ntx-menu li a {
+font-weight: 400;
+font-size: 16px;
+color: #101828;
+display: block;
+padding: 18px 24px;
+display: flex;
+align-items: center;
+text-decoration: none;
+}
+.dev-ntx-menu li a i {
+  margin: 0 12px 0 0;
+}
+.dev-ntx-menu li.active a {
+  background: #21759B;
+border-radius: 4px;
+color: #fff;
+}
+.dev-ntx-menu li.active a img {
+  filter: brightness(0) invert(1);
+
+}
+.dev-ntx-menu li.active a:hover{
+  color: #fff;
+}
+.dev-ntx-menu li a:hover {
+  color: #21759B;
+}
+.dev-ntx-title {
+  display: flex;
+  margin: 0 0 30px 0;
+  align-items: center;
+}
+.dev-ntx-title i {
+  width: 71px;
+  height: 71px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border-radius: 12px;
+  margin: 0 28px 0 0;
+}
+.dev-ntx-title h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #101828;
+}
+.dev-ntx-title h1 small {
+  display: block;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+color: #A4A4A4;
+margin: 4px 0 0 0;
+}
+.dev-ntx-form {
+  max-width: 80%;
+  width: 100%;
+}
+.dev-ntx-form-container {
+  width: 100%;
+background: #FFFFFF;
+border: 1px solid #EAEAEA;
+border-radius: 8px;
+padding: 36px 36px 10px 36px;
+}
+.dev-ntx-row {
+  display: flex;
+  gap: 20px;
+}
+.dev-ntx-row .dev-ntx-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.dev-ntx-row .dev-ntx-field label {
+  font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+color: #344054;
+}
+.dev-ntx-row .dev-ntx-field input, .dev-ntx-row .dev-ntx-field select {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+  padding: 5px 15px;
+  max-width: 100%;
+}
+.dev-ntx-row .dev-ntx-textarea textarea {
+  width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgb(16 24 40 / 5%);
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.dev-ntx-btn, .submit input.button-primary{
+height: 60px;
+padding: 10px 40px;
+background: #21759B;
+border: 1px solid #21759B;
+box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+border-radius: 8px;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+color: #FFFFFF;
+cursor: pointer;
+
+}
+.dev-ntx-btn{
+  margin-top: 28px;
+}
+.dev-ntx-tabs {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 32px;
+  list-style: none;
+}
+.dev-ntx-tabs li a {
+  height: 20px;
+  font-weight: 400;
+font-size: 20px;
+text-decoration: none;
+line-height: 24px;
+color: #A4A4A4;
+padding-bottom: 5px;
+border-bottom: 3px solid transparent;
+}
+.dev-ntx-tabs li.active a {
+  font-weight: 700;
+color: #101828;
+border-bottom-color: #101828;
+}
+.dev-ntx-color-picker {
+    display: flex;
+    gap: 15px;
+}
+.dev-ntx-color-picker .dev-ntx-color {
+    min-width: 135px;
+    background: #C45A56;
+    border-radius: 8px;
+    border: none;
+    outline: 0;
+}
+.dev-ntx-form-container h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #101828;
+    margin: 0 0 30px 0;
+}
+.dev-ntx-color-picker .dev-ntx-color.blue {
+  background: #567EC4;
+}
+.dev-ntx-color-picker .dev-ntx-color.yellow {
+  background: #E9AA3B;
+}
+.dev-ntx-row .dev-ntx-field input[type="checkbox"] {
+    display: none;
+}
+.dev-ntx-row .dev-ntx-field label.dev-ntx-switcher {
+    height: 64px;
+    background: #F4F4F4;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #101828;
+    margin: 20px 0 0 0;
+    cursor:  pointer;
+}
+.dev-ntx-row .dev-ntx-field label.dev-ntx-switcher span {
+    width: 44px;
+    height: 24px;
+    background: #E2E5EC;
+    border-radius: 12px;
+    position: relative;
+}
+.dev-ntx-row .dev-ntx-field label.dev-ntx-switcher span:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+    position: absolute;
+    left: 2px;
+    border-radius: 100%;
+    top: 2px;
+    transition: all 0.3s ease 0s;
+}
+.dev-ntx-content-card {
+  width: 100%;
+  max-height: 0;
+  transition: max-height 0.3s ease 0s;
+  overflow: hidden;
+  opacity: 0;
+  background: #F4F4F4;
+  border: 1px solid #E6E6E6;
+  border-top: 0;
+  margin: -13px 0 0 0;
+  border-radius: 0 0 4px 4px;
+}
+.dev-ntx-row.dev-ndx-swicher-row .dev-ntx-field > label{
+  margin: 0;
+}
+.dev-ntx-content-card p {
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+color: #101828;
+}
+.dev-ntx-row .dev-ntx-field input[type="checkbox"]:checked + label span {
+  background: #21759B;
+}
+.dev-ntx-row .dev-ntx-field input[type="checkbox"]:checked + label span:before {
+  left: 22px;
+}
+.dev-ntx-row .dev-ntx-field input[type="checkbox"]:checked + label + .dev-ntx-content-card {
+  max-height: 200px;
+  opacity: 1;
+  padding: 10px 30px 30px 30px;
+}
+.dev-ntx-content-card ul.dev-ntx-checkboxs {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0 0 0;
+}
+.dev-ntx-content-card ul.dev-ntx-checkboxs li label {
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+color: #545454;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.dev-ntx-content-card ul.dev-ntx-checkboxs li label:before {
+  content: "";
+  min-width: 20px;
+height: 20px;
+background: #FFFFFF;
+border: 1px solid #D0D5DD;
+border-radius: 6px;
+display: block;
+}
+.dev-ntx-content-card ul.dev-ntx-checkboxs li input:checked + label:before {
+  border-color: #21759B;
+  background-image: url(../images/check-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.dev-ntx-row .dev-ntx-field.social-media label.dev-ntx-switcher {
+    padding: 0;
+    background: transparent;
+    border: none;
+    height: auto;
+}
+.dev-ntx-row .dev-ntx-field.social-media label.dev-ntx-switcher i {
+    font-style: normal;
+    display: flex;
+    align-items: center;
+}
+.dev-ntx-row .dev-ntx-field.social-media label.dev-ntx-switcher i img {
+    margin: 0 8px 0 0;
+}
+.dev-ntx-row .dev-ntx-field.social-media input[type="checkbox"]:checked + label span {
+  background: #1778F2;
+}
+.dev-ntx-row .dev-ntx-field.social-media input#google[type="checkbox"]:checked + label span {
+  background: #FFA700;
+}
+.dev-ntx-main.dev-ntx-metaboxs .dev-ntx-content{
+  width: 100%;
+  min-height: auto;
+  height: auto;
+}
+
+.dev-ntx-tag{
+  width: 100%;
+  min-height: 44px;
+  background: #FFFFFF;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px rgb(16 24 40 / 5%);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+  padding: 5px 15px;
+}
+.dev-ntx-tag > span{
+  cursor: pointer;
+    display: block;
+    float: left;
+    margin-right: 4px;
+    height: auto;
+    padding: 8px 30px 8px 10px;
+    background: #1778F2;
+    box-shadow: 0px 1px 2px rgb(16 24 40 / 5%);
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.dev-ntx-tag > span:hover{
+  opacity:0.7;
+}
+.dev-ntx-tag > span:after{
+  position: absolute;
+  content: "×";
+  padding: 0px 4px 0px;
+  margin-left: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  line-height: 100%;
+}
+#dev-ntx-tags > input{
+  width: auto;
+  height: auto;
+  background: #FFFFFF;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+  padding: 5px 0px;
+  margin: 0;
+}
+.dev-ntx-metaboxs .dev-ntx-btn{
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+.dev-ntx-metaboxs .dev-ntx-row {
+  display: flex;
+  gap: 0;
+  flex-direction: column;
+}
+
+section.dev-ntx-main.dev-ntx-metaboxs.loading {
+  opacity: 0.4;
+}
+
+.dev-ntx-loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #1778F2;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  animation: pulse 1s linear infinite;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: none;
+  z-index: 1;
+}
+.dev-ntx-loader:after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 5px solid #1778F2;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: scaleUp 1s linear infinite;
+}
+
+@keyframes scaleUp {
+  0% { transform: translate(-50%, -50%) scale(0) }
+  60% , 100% { transform: translate(-50%, -50%)  scale(1)}
+}
+@keyframes pulse {
+  0% , 60% , 100%{ transform:  scale(1) }
+  80% { transform:  scale(1.2)}
+}
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 1199px) {
+.dev-ntx-header {
+  width: 280px;
+}
+.dev-ntx-content {
+    width: calc(100% - 280px);
+}
+.dev-ntx-menu {
+    margin: 40px 0 0 0;
+}
+.dev-ntx-menu li a {
+    font-size: 14px;
+    padding: 15px;
+}
+.dev-ntx-title h1 small {
+  font-size: 18px;
+}
+.dev-ntx-title h1 {
+  font-size: 35px;
+}
+.dev-ntx-btn {
+  height: 50px;
+}
+}
